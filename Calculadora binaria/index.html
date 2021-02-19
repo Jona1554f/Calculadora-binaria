@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <title id="title">Calculadora y convertidor binario-decimal</title>
+  <meta charset="utf-8"/>
+  <meta name="author" content="SidPro"/>
+  <meta name="description" content="Calculadora de conversión de decimal a binario"/>
+  <meta name="keywords" content="decimalaBinario,Binarioadecimal"/>
+  <meta name="viewport" content="width=devive-width,initial-scale=1.0"/>
+  <link type="text/css" rel="stylesheet" href="css\converter.css">
+  <link rel="stylesheet" href="css\colorconvert.css">
+  <script src="javascript\sidpro.js" charset="utf-8"></script>
+</head>
+<body id="body1" class="bgcolor1">
+  <div class="flex-container">
+    <div class="grid-container maincontainer bgcolor2">
+  <!-- converter -->
+      <h1 id="h1" class="h2F item1 textcolor1">Convertidor de decimal a binario y CALCULADORA</h1>
+
+        <div class="item2 textcolor3" style="margin-top:10px">
+          <label for="select1">De</label><br/>
+          <select class="textcolor2 bgcolor1" id="select1" name="unit1" onchange="convert()">
+              <option value="Binario">Binario</option>
+              <option value="Decimal">Decimal</option>
+              
+          </select>
+        </div>
+
+        <div class="item3 textcolor3" style="margin-top:10px">
+          <lable for="select2">A</lable><br/>
+          <select class="textcolor2 bgcolor1" id="select2" name="unit2" onchange="convert()">
+              <option value="Binario">Binario</option>
+              <option value="Decimal">Decimal</option>
+              
+          </select>
+        </div>
+
+      <div class="item4 textcolor1">
+          <lable id="lable1" for="input1">Ingrese el número decimal:</lable><br/>
+          <input class="bgcolor1 textcolor2" id="input1" type="text" onkeypress="return Onpress(event)" name="Binario1"><sub id="sub1">2</sub>
+      </div>
+
+      <button id="btn1" class="button1 textcolor1" type="button" name="convert" onclick="takevalue()">Convertir</button>
+      <button id="btn2" class="button2 textcolor1" type="button" name="reset" onclick="Reset()">Reiniciar</button>
+      <button id="btn3" class="button3 textcolor1" type="button" name="swape" onclick="Swape()">intercambio</button>
+
+      <div class="item5 textcolor1">
+        <label id="lable2" for="output1">Número Binario:</label><br>
+        <textarea class="bgcolor1 textcolor2" id="output1" name="outpu1" rows="20" cols="40" readonly></textarea><sub id="sub2">2</sub>
+      </div>
+   <!-- calculator -->
+      
+
+     
+    </div>
+    <div class="text-container">
+      <div class="indiv">
+       
+    </div>
+  </div>
+  
+</body>
+</html>
